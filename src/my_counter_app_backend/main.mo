@@ -7,6 +7,11 @@ actor {
     return counter;
   };
 
+  public func decr() : async Nat {
+    counter -= 1;
+    return counter;
+  };
+
   public query func getCount() : async Nat {
     return counter;
   };
